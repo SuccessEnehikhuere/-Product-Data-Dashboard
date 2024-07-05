@@ -17,7 +17,7 @@ const Navbar = ({ supplierName, setSupplierName }) => {
     <nav className="items-center bg-white">
       <div className="flex place-items-center gap-x-8 px-4 sm:px-8 py-4">
         <div className="w-[150px] sm:w-[250px]">
-          <img src={img} alt="logo"/>
+          <img src={img} alt="logo" className='md:w-[200px] md:h-[54px]'/>
         </div>
 
         <div className="hidden lg:flex w-[1px] bg-lightGrey h-[250px] absolute left-[290px] pt-0" />
