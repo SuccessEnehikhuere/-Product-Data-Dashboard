@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F6F6F6;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: url('/fonts/EuclidCircularB-Semibold.woff2') format('woff2'),
+       url('/fonts/EuclidCircularB-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+       url('/fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-SemiBold.woff2') format('woff2'),
+       url('/fonts/Inter-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Bold.woff2') format('woff2'),
+       url('/fonts/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: .6em 3em;
+  vertical-align: middle;
+  /* border-right: 1px solid #aaa; */
+  border-bottom: 1px solid #F0F0F0;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+
+
+thead {
+  position: relative;
+}
+
+thead::after {
+  content: "";
+  display: block;
+  height: 2em;
+  /* background: transparent; */
+  background-color: #F6F6F6;
+}
+
+
+
+tbody tr:first-child td:first-child {
+  border-top-left-radius: 20px;
+}
+
+tbody tr:first-child td:last-child {
+  border-top-right-radius: 20px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
